@@ -1,5 +1,4 @@
-
-
+import java.util.*;
 
 public class gameMaterials {
     public static String tutorial(){
@@ -17,18 +16,16 @@ public class gameMaterials {
         System.out.println("You will have to restart from the beginning once the game exits, so do not say no unless you intend to stop playing.");
         return "Good luck, the game will restart now!";
     }
-
-    public static void profBruceIntro(){
+    
+    public static void introduction(){
+        Scanner userInput = new Scanner(System.in);
         System.out.println("....");
         System.out.println("....");
         System.out.println("Oh, hello there! Allow me to introduce myself. My name is Professor Bruce, I am a Pokémon developer in the Appleton Region.");
         System.out.println("May I ask what your name is?");
+        String trainersName = userInput.nextLine();
         System.out.println(" ");
-    }
-
-    public static void profBruceP2(String currentTrainer){
-        System.out.println(" ");
-        System.out.println("Well, it is great to meet you " + currentTrainer + ", I hope you are ready for your Pokemon adventure!");
+        System.out.println("Well, it is great to meet you " + trainersName + ", I hope you are ready for your Pokemon adventure!");
         System.out.println("Below, I have three Pokemon for you to select from to start your journey!");
         System.out.println("I will warn you, the elite three will not go easy on you.");
         System.out.println("However, if you are persistent, I am confident you can one day become the Grand Master!");
@@ -36,7 +33,45 @@ public class gameMaterials {
         System.out.println("....");
         System.out.println(" ");
     }
-
+    
+    public static void chooseStarterPokemon(){
+        String[] pokemonNames = {"Bulbasaur", "Charmander", "Squirtle"};
+        System.out.println("Please select one of these Pokémon: ");
+        for(String elem : pokemonNames){
+            System.out.println(elem);
+        }
+        System.out.println(" ");
+    }
+    
+    public static String playAgain(){
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("....");
+        System.out.println("....");
+        System.out.println("Would you like to play again? (Yes or No)");
+        String playChoice = userInput.nextLine();
+        String lowerPlayChoice = playChoice.toLowerCase();
+        if(lowerPlayChoice.equals("yes")){
+            return "yes";
+        } else if(lowerPlayChoice.equals("no")){
+            return "no";
+        } else {
+            return "Enter Yes or No next time to make a decision.";
+        }
+    }
+    
+    
+    public static String outro(){
+        System.out.println("*Woooossshhh*");
+        System.out.println("Professor Ackles Vanishes...");
+        System.out.println(" ");
+        System.out.println("....");
+        System.out.println("....");
+        System.out.println("Professor Bruce appears");
+        System.out.println("Well, it seems my intuiti");
+        return "Hi";
+    }
+    
+    
     public static void main(String[] args){
     }
 }
