@@ -59,16 +59,38 @@ public class gameMaterials {
         }
     }
     
+    public static void acklesIntro(){
+        System.out.println(" ");
+        System.out.println("......");
+        System.out.println("*Eerie Music*");
+        System.out.println("......");
+        System.out.println("So much power in one computer. A diverse core of languages.");
+        System.out.println("Harness the power.... Knowledge is power....");
+        System.out.println("......");
+        System.out.println(" ");
+        System.out.println("Would you like to start the battle (Yes or No)?");
+    }
     
-    public static String outro(){
+    public static void outro(){
+        System.out.println(" ");
         System.out.println("*Woooossshhh*");
         System.out.println("Professor Ackles Vanishes...");
         System.out.println(" ");
         System.out.println("....");
         System.out.println("....");
-        System.out.println("Professor Bruce appears");
-        System.out.println("Well, it seems my intuiti");
-        return "Hi";
+        System.out.println("Professor Bruce appears....");
+        System.out.println("....");
+        System.out.println("....");
+        System.out.println("Well, it seems my intuitions were right about you. Congratulations on becoming the new Grand Master.");
+        System.out.println("Remember to keep the lessons you have learned on your journey in mind for battles with future challengers.");
+        System.out.println("Take care my friend, and again, congratulations!");
+        System.out.println(" ");
+        System.out.println("*Woooossshhh*");
+        System.out.println("Professor Bruce Vanishes...");
+        System.out.println(" ");
+        System.out.println("....");
+        System.out.println("....");
+        System.out.println("Congratulations, you won the game! Thanks for playing!");
     }
     
     
