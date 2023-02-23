@@ -84,13 +84,13 @@ public class gameMaterials {
         System.out.println("Well, it seems my intuitions were right about you. Congratulations on becoming the new Grand Master.");
         System.out.println("Remember to keep the lessons you have learned on your journey in mind for battles with future challengers.");
         System.out.println("Take care my friend, and again, congratulations!");
-        System.out.println(" ");
+        System.out.println("....");
+        System.out.println("....");
         System.out.println("*Woooossshhh*");
         System.out.println("Professor Bruce Vanishes...");
         System.out.println(" ");
-        System.out.println("....");
-        System.out.println("....");
         System.out.println("Congratulations, you won the game! Thanks for playing!");
+        System.out.println(" ");
     }
     
     

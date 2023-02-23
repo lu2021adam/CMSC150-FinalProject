@@ -455,8 +455,8 @@ public class PokeGame {
             return "Okay, play again when you are ready to battle!";
         } else if (lowerBattleTime.equals("yes")){
             System.out.println(" ");
-            int darkraiHealth = pokeHP.nextInt(50,120);
-            int usersPokemonHealth = pokeHP.nextInt(50,99);
+            int darkraiHealth = pokeHP.nextInt(50,100);
+            int usersPokemonHealth = pokeHP.nextInt(65,150);
             String gymLeader = "Cristian";
             String leadersPokemon = "Darkrai";
             PokeClass darkPokemon = new PokeClass(leadersPokemon);
@@ -471,7 +471,7 @@ public class PokeGame {
                 System.out.println("Your Moves: ");
                 userPokemon.currentPokeMoves();
                 System.out.println(userBattler.getPokemon() + "'s current Health is: " + userBattler.getHP());
-                System.out.println(darkraiBattler.getPokemon() + "'s Pokemon's current health is: " + darkraiBattler.getHP());
+                System.out.println(darkraiBattler.getPokemon() + "'s current health is: " + darkraiBattler.getHP());
                 System.out.println(" ");
                 for(int i = 0; i < 2; i++){
                     if(i == 0){
@@ -509,17 +509,20 @@ public class PokeGame {
         System.out.println("Welcome to your second battle with the elite three!");
         System.out.println("Before battle comenses, would you like a refresher of " + userPokemon.getPokemon() + "s current battle moves?");
         while(true){
-            System.out.println(" ");
             String moveRefresher = userInput.nextLine();
             String lowerMoveRefresher = moveRefresher.toLowerCase();
+            System.out.println(" ");
             if(lowerMoveRefresher.equals("yes")){
                 userPokemon.currentPokeMoves();
                 break;
             } else if (lowerMoveRefresher.equals("no")) {
                 System.out.print("Okay, get ready for battle then!");
+                System.out.println(" ");
                 break;
             } else {
                 System.out.println("Please enter a valid form of yes or no.");
+                System.out.println(" ");
+                System.out.println("Would you like a refresher of " + userPokemon.getPokemon() + "s current battle moves?");
             }
         }
         System.out.println(" ");
@@ -530,8 +533,8 @@ public class PokeGame {
             return "Okay, play again when you are ready to battle!";
         } else if (lowerBattleTime.equals("yes")){
             System.out.println(" ");
-            int arcanineHealth = pokeHP.nextInt(75,150);
-            int usersPokemonHealth = pokeHP.nextInt(85,140);
+            int arcanineHealth = pokeHP.nextInt(80,150);
+            int usersPokemonHealth = pokeHP.nextInt(85,160);
             String gymLeader = "JP";
             String leadersPokemon = "Arcanine";
             PokeClass firePokemon = new PokeClass(leadersPokemon);
@@ -547,7 +550,7 @@ public class PokeGame {
                 System.out.println("Your Moves: ");
                 userPokemon.currentPokeMoves();
                 System.out.println(userBattler.getPokemon() + "'s current Health is: " + userBattler.getHP());
-                System.out.println(arcanineBattler.getPokemon() + "'s Pokemon's current health is: " + arcanineBattler.getHP());
+                System.out.println(arcanineBattler.getPokemon() + "'s current health is: " + arcanineBattler.getHP());
                 System.out.println(" ");
                 for(int i = 0; i < 2; i++){
                     if(i == 0){
@@ -585,17 +588,20 @@ public class PokeGame {
         System.out.println("Welcome to the Grand Master battle!!");
         System.out.println("Before battle comenses, would you like a refresher of " + userPokemon.getPokemon() + "s current battle moves?");
         while(true){
-            System.out.println(" ");
             String moveRefresher = userInput.nextLine();
             String lowerMoveRefresher = moveRefresher.toLowerCase();
+            System.out.println(" ");
             if(lowerMoveRefresher.equals("yes")){
                 userPokemon.currentPokeMoves();
                 break;
             } else if (lowerMoveRefresher.equals("no")) {
                 System.out.print("Okay, get ready for battle then!");
+                System.out.println(" ");
                 break;
             } else {
                 System.out.println("Please enter a valid form of yes or no.");
+                System.out.println(" ");
+                System.out.println("Would you like a refresher of " + userPokemon.getPokemon() + "s current battle moves?");
             }
         }
         gameMaterials.acklesIntro();
@@ -608,7 +614,7 @@ public class PokeGame {
             String gymLeader = "Professor Ackles";
             String leadersPokemon = "Arceus";
             int arceusHealth = pokeHP.nextInt(200,410);
-            int usersPokemonHealth = pokeHP.nextInt(220,390);
+            int usersPokemonHealth = pokeHP.nextInt(220,400);
             PokeClass grandMasterPokemon = new PokeClass(leadersPokemon);
             BattleClass userBattler = new BattleClass(usersPokemonHealth, userPokemon.getPokemon());
             BattleClass arceusBattler = new BattleClass(arceusHealth, leadersPokemon.toLowerCase());
@@ -623,7 +629,7 @@ public class PokeGame {
                 System.out.println("Your Moves: ");
                 userPokemon.currentPokeMoves();
                 System.out.println(userBattler.getPokemon() + "'s current Health is: " + userBattler.getHP());
-                System.out.println(arceusBattler.getPokemon() + "'s Pokemon's current health is: " + arceusBattler.getHP());
+                System.out.println(arceusBattler.getPokemon() + "'s current health is: " + arceusBattler.getHP());
                 System.out.println(" ");
                 for(int i = 0; i < 2; i++){
                     if(i == 0){

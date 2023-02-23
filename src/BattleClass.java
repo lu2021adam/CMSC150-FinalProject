@@ -31,17 +31,17 @@ public class BattleClass {
     }
 
     public void userAttack(BattleClass otherPokemon, String moveChoice) {
-        if(Arrays.asList(SQUIRTLEMOVES).contains(moveChoice) == false){
-            System.out.println("Your turn was skipped!");
-            System.out.println("Enter a valid move or spell the move correctly next time! (Case Sensitive)");
-        }
         if(this.battlersPokemon.equals("squirtle")){
+            if(Arrays.asList(SQUIRTLEMOVES).contains(moveChoice) == false){
+                System.out.println("Your turn was skipped!");
+                System.out.println("Enter a valid move or spell the move correctly next time! (Case Sensitive)");
+            }
             for (String attack : SQUIRTLEMOVES) {
                 if(attack.equals(moveChoice) && attack.equals("Heal")){
                     int healingResult = healingMove.nextInt(20);
                     this.pokemonHealth += healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                 } else if(attack.equals(moveChoice) && attack.equals("WaterGun")){
                     int advancedAttack = advancedMove.nextInt(30);
                     otherPokemon.pokemonHealth -= advancedAttack;
@@ -118,7 +118,7 @@ public class BattleClass {
                     int healingResult = healingMove.nextInt(25,50);
                     this.pokemonHealth += healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                 } else if(attack.equals(moveChoice) && attack.equals("WaterGun")){
                     int advancedAttack = advancedMove.nextInt(2,60);
                     otherPokemon.pokemonHealth -= advancedAttack;
@@ -181,7 +181,7 @@ public class BattleClass {
                     int healingResult = healingMove.nextInt(25,50);
                     this.pokemonHealth += healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                 }
             }
         } else if (this.battlersPokemon.equals("blastoise")){
@@ -195,7 +195,7 @@ public class BattleClass {
                     this.pokemonHealth += healingResult;
                     otherPokemon.pokemonHealth -= healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                     System.out.println(this.battlersPokemon + " dealt " + healingResult + " damage to " + otherPokemon.battlersPokemon + ".");
                     System.out.println(otherPokemon.battlersPokemon + " now has " + otherPokemon.pokemonHealth + " health remaining.");
                 } else if(attack.equals(moveChoice) && attack.equals("Surf")){
@@ -223,7 +223,7 @@ public class BattleClass {
                     this.pokemonHealth += healingResult;
                     otherPokemon.pokemonHealth -= healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                     System.out.println(this.battlersPokemon + " dealt " + healingResult + " damage to " + otherPokemon.battlersPokemon + ".");
                     System.out.println(otherPokemon.battlersPokemon + " now has " + otherPokemon.pokemonHealth + " health remaining.");
                 } else if(attack.equals(moveChoice) && attack.equals("FireBlast")){
@@ -251,14 +251,14 @@ public class BattleClass {
                     this.pokemonHealth += healingResult;
                     otherPokemon.pokemonHealth -= healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                     System.out.println(this.battlersPokemon + " dealt " + healingResult + " damage to " + otherPokemon.battlersPokemon + ".");
                     System.out.println(otherPokemon.battlersPokemon + " now has " + otherPokemon.pokemonHealth + " health remaining.");
                 } else if(attack.equals(moveChoice) && attack.equals("FlowerPower")){
                     int healingResult = healingMove.nextInt(30, 80);
                     this.pokemonHealth += healingResult;
                     System.out.println(this.battlersPokemon + " used " + moveChoice + ".");
-                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health." +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
+                    System.out.println(this.battlersPokemon + " gained " + healingResult + " health. " +  this.battlersPokemon + " now has " +  this.pokemonHealth + " health remaining.");
                 } else if(attack.equals(moveChoice) && attack.equals("RazorLeaf")){
                     int advancedAttack = advancedMove.nextInt(50, 100);
                     otherPokemon.pokemonHealth -= advancedAttack;
@@ -296,7 +296,7 @@ public class BattleClass {
                 }
             }
         } else if(this.battlersPokemon.equals("arcanine")){
-            for (String attack : DARKRAIMOVES) {
+            for (String attack : ARCANINEMOVES) {
                 if(attack.equals(moveChoice) && attack.equals("FireFang")){
                     int advancedAttack = advancedMove.nextInt(2,60);
                     usersPokemon.pokemonHealth -= advancedAttack;
@@ -317,7 +317,7 @@ public class BattleClass {
                 }
             }
         } else if(this.battlersPokemon.equals("arceus")){
-            for (String attack : DARKRAIMOVES) {
+            for (String attack : ARCEUSMOVES) {
                 if(attack.equals(moveChoice) && attack.equals("CosmicPower")){
                     int healingResult = healingMove.nextInt(30, 80);
                     this.pokemonHealth += healingResult;
