@@ -97,7 +97,3 @@ public class gameMaterials {
     public static void main(String[] args){
     }
 }
-
-
-//i really enjoyed playing this game. I hoped to have more background. I'm assuming draakrai is a gym leader. I would love to have more of a story developed. I loved the game overall, I was just sad it was so short. 
-//Thank you for making my dreams come true as a pokemon trainer!
